@@ -1,0 +1,53 @@
+:root {
+  --orange: #f17228;
+  --yellow: #ffb30e;
+}
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #ffffff;
+  padding: 15px;
+}
+.navbar-left {
+  font-size: 2rem;
+  font-weight: 700;
+  gap: 0;
+  color: var(--orange);
+}
+
+.ger {
+  color: var(--yellow);
+}
+.del {
+  font-weight: 600;
+}
+
+.location {
+  font-size: 20px;
+  font-weight: 600;
+}
+.navbar-right {
+  display: flex;
+  gap: 20px;
+  font-size: 18px;
+  font-weight: 700;
+}
+.sear {
+  margin: auto;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.btn {
+  margin: auto;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 18px;
+  font-weight: 700;
+  padding: 5px;
+
+  color: #ffa901;
+  background-color: white;
+}
