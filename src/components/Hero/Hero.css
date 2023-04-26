@@ -1,0 +1,56 @@
+:root {
+  --orange: #f17228;
+  --lightyellow: #fbce2c;
+}
+
+.hero {
+  height: 90vh;
+  width: 100%;
+  background-color: #ffb30e;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: relative;
+}
+.hero-head {
+  font-size: 4rem;
+  color: white;
+}
+.hero-para {
+  font-size: 1.3rem;
+}
+.hero-sub {
+  background-color: white;
+  padding: 10px;
+  border-radius: 10px;
+}
+.hero-sub-sub {
+  display: flex;
+  gap: 10px;
+}
+.search {
+  display: flex;
+  background-color: #f5f5f5;
+  justify-content: center;
+  align-items: flex-start;
+  margin-top: 20px;
+  gap: 10px;
+}
+.ser {
+  display: flex;
+  height: fit-content;
+}
+.inp {
+  height: full;
+  padding: 10px;
+  font-size: 1rem;
+}
+
+/* .hero-right {
+  position: relative;
+} */
+.baseImg {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+}
