@@ -1,0 +1,36 @@
+button {
+  border: none;
+  border-radius: 5px;
+  padding: 8px 12px;
+}
+.icon-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px;
+  border: none;
+  background-color: #fef1ea;
+  color: #f17228;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.icon-button:hover {
+  background-color: #d6dee7;
+}
+
+.icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 8px;
+}
+
+.icon img {
+  width: 20px;
+}
+
+.btn-secondary {
+  background-color: gray;
+  color: white;
+}
