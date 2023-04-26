@@ -9,7 +9,7 @@ import IconButton from "../Button";
 
 const Hero = (props) => {
   return (
-    <div className="hero">
+    <div className="hero container-fluid">
       <div className="hero-left">
         <h1 className="hero-head">Are you Starving?</h1>
         <p className="hero-para">
@@ -17,8 +17,13 @@ const Hero = (props) => {
         </p>
         <div className="hero-sub">
           <div className="hero-sub-sub">
-            <IconButton label="Home" icon={delivery} />
-            <IconButton label="Pickup" icon={pickup} />
+            <span>
+              <IconButton label="Home" icon={delivery} color="warning" />
+            </span>
+
+            <span>
+              <IconButton label="Pickup" icon={pickup} color="light" />
+            </span>
           </div>
           <div className="search">
             <div className="ser">
@@ -31,7 +36,7 @@ const Hero = (props) => {
               />
             </div>
 
-            <IconButton label="Search" icon={search} />
+            <IconButton label="Find Food" icon={search} color="danger" />
           </div>
         </div>
       </div>
