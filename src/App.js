@@ -1,3 +1,5 @@
+
+import OfferSection from "./Layout/OfferSection";
 import logo from "./logo.svg";
 import "./App.css";
 import Navbar from "./components/Navbar";
@@ -8,8 +10,10 @@ function App() {
     <div className="App">
       <Navbar />
       <Hero />
+       <OfferSection />
     </div>
   );
+
 }
 
 export default App;
