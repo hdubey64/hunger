@@ -3,7 +3,7 @@ import "./Button.css";
 
 function IconButton(props) {
   return (
-    <button className="icon-button" onClick={props.onClick}>
+    <button className={`btn ${props.color}`} onClick={props.onClick}>
       <span className="icon">
         <img src={props.icon} />
       </span>
