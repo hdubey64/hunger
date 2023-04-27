@@ -1,4 +1,4 @@
-.btn {
+.iconBtn {
    display: flex;
    padding: 10px;
    border: none;
@@ -7,34 +7,33 @@
    font-size: 16px;
    font-weight: bold;
    cursor: pointer;
-   transition: all 0.3s ease;
+   transition: all 0.5s ease;
 }
 
-.btn.primary {
-   background-color: #007bff;
-   color: #fff;
-}
-
-.btn.secondary {
-   background-color: #6c757d;
-   color: #fff;
-}
-.btn.light {
+.iconBtn.light {
    background-color: #ffffff;
    color: #989898;
 }
-.btn.warning {
+.iconBtn.warning {
    background-color: #fef1ea;
    color: #f17228;
 }
 
-.btn.danger {
+.iconBtn.danger {
    background-color: #fc7056;
    color: #fff;
+   display: flex;
+   align-items: center;
+   justify-content: center;
 }
-
-.btn:hover {
-   background-color: #cdd6aae0;
+.iconBtn:hover {
+   background-color: #ffffffe0;
+   color: #fc7056;
+}
+.iconBtn.danger:hover {
+   background-color: #ffffffe0;
+   border: 1px solid #fc7056;
+   color: #fc7056;
 }
 
 .icon {
@@ -59,4 +58,9 @@
    border-radius: 5px;
    display: inline;
    margin: 0;
+}
+.btnColor:hover {
+   background-color: #ffffffe0;
+   color: #fc7056;
+   border: 1px Solid #fc7056;
 }
