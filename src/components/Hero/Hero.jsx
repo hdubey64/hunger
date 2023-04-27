@@ -6,6 +6,7 @@ import pickup from "./Asserts/pickup.png";
 import location from "./Asserts/location.png";
 import search from "./Asserts/search.png";
 import IconButton from "../Button";
+import { FaSearch } from "react-icons/fa";
 
 const Hero = (props) => {
   return (
@@ -27,7 +28,7 @@ const Hero = (props) => {
           </div>
           <div className="search">
             <div className="ser">
-              <img src={location} />
+              <img src={location} height={25} alt="iconlocation" />
               <input
                 className="inp"
                 type="text"
@@ -36,7 +37,9 @@ const Hero = (props) => {
               />
             </div>
 
-            <IconButton label="Find Food" icon={search} color="danger" />
+            <div className="inputSearch">
+              <IconButton label="Find Food" color="danger" icon={search} />
+            </div>
           </div>
         </div>
       </div>
