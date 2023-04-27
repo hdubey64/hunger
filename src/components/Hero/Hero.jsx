@@ -6,6 +6,7 @@ import pickup from "./Asserts/pickup.png";
 import location from "./Asserts/location.png";
 import search from "./Asserts/search.png";
 import IconButton from "../Button";
+import { FaSearch, FaBiking, FaShoppingBag } from "react-icons/fa";
 
 const Hero = (props) => {
   return (
@@ -18,16 +19,20 @@ const Hero = (props) => {
         <div className="hero-sub">
           <div className="hero-sub-sub">
             <span>
-              <IconButton label="Home" icon={delivery} color="warning" />
+              <IconButton label="Home" icon={<FaBiking />} color="warning" />
             </span>
 
             <span>
-              <IconButton label="Pickup" icon={pickup} color="light" />
+              <IconButton
+                label="Pickup"
+                icon={<FaShoppingBag />}
+                color="light"
+              />
             </span>
           </div>
           <div className="search">
             <div className="ser">
-              <img src={location} />
+              <img src={location} height={25} alt="iconlocation" />
               <input
                 className="inp"
                 type="text"
@@ -36,7 +41,13 @@ const Hero = (props) => {
               />
             </div>
 
-            <IconButton label="Find Food" icon={search} color="danger" />
+            <div className="inputSearch">
+              <IconButton
+                label="Find Food"
+                color="danger"
+                icon={<FaSearch />}
+              />
+            </div>
           </div>
         </div>
       </div>
