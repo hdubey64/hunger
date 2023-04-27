@@ -1,22 +1,40 @@
-button {
-  border: none;
-  border-radius: 5px;
-  padding: 8px 12px;
-}
-.icon-button {
+.btn {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 8px;
+  padding: 10px;
   border: none;
-  background-color: #fef1ea;
-  color: #f17228;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
   cursor: pointer;
   transition: all 0.3s ease;
 }
 
-.icon-button:hover {
-  background-color: #d6dee7;
+.btn.primary {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.btn.secondary {
+  background-color: #6c757d;
+  color: #fff;
+}
+.btn.light {
+  background-color: #ffffff;
+  color: #989898;
+}
+.btn.warning {
+  background-color: #fef1ea;
+  color: #f17228;
+}
+
+.btn.danger {
+  background-color: #fc7056;
+  color: #fff;
+}
+
+.btn:hover {
+  background-color: #cdd6aae0;
 }
 
 .icon {

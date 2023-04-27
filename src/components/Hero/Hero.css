@@ -12,6 +12,7 @@
    align-items: center;
    position: relative;
 }
+
 .hero-head {
    font-size: 4rem;
    color: white;
@@ -47,11 +48,13 @@
    font-size: 1rem;
 }
 
-/* .hero-right {
+.hero-right {
   position: relative;
-} */
+}
 .baseImg {
+
    position: relative;
    width: 450px;
    bottom: -50px;
+
 }
