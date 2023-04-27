@@ -44,18 +44,16 @@ const cardData = [
 
 const OfferSection = () => {
    return (
-      <div>
-         <div className="main container">
-            {cardData.map((item) => (
-               <OfferCard
-                  key={item.offer}
-                  offer={item.offer}
-                  img={item.img.png}
-                  cardHead={item.cardHead}
-                  offerRemainingTime={item.offerRemainingTime}
-               />
-            ))}
-         </div>
+      <div className="main container">
+         {cardData.map((item) => (
+            <OfferCard
+               key={item.offer}
+               offer={item.offer}
+               img={item.img.png}
+               cardHead={item.cardHead}
+               offerRemainingTime={item.offerRemainingTime}
+            />
+         ))}
       </div>
    );
 };
