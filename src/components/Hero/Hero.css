@@ -1,72 +1,68 @@
-:root {
-  --orange: #f17228;
-  --lightyellow: #fbce2c;
-}
-
 .hero {
-  height: 90vh;
-  width: 100%;
-  background-color: #ffb30e;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  position: relative;
+   max-height: fit-content;
+   background-image: linear-gradient(to bottom, #ffc80d, #ffb607);
+   padding-top: 7%;
+}
+.heroMain {
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   place-items: start end;
+   padding: 2% 2% 0 2%;
 }
 
-.hero-head {
-  font-size: 4rem;
-  color: white;
+.heroMainLeftTitle {
+   margin: 2px auto;
 }
-.hero-para {
-  font-size: 1.3rem;
-  font-weight: 500;
+.heroMainLeftTitle h1 {
+   font-size: 4rem;
+   color: white;
+   font-weight: 700;
 }
-.hero-sub {
-  background-color: white;
-  padding: 10px;
-  border-radius: 10px;
+.heroMainLeftTitle p {
+   font-size: 1.2rem;
+   color: #504f4f;
 }
-.hero-sub-sub {
-  display: flex;
-  gap: 10px;
+.heroMainLeftForm {
+   background-color: white;
+   border-radius: 15px;
 }
-.search {
-  display: flex;
-  background-color: #ffffff;
-  justify-content: center;
-  align-items: center;
-  margin-top: 20px;
-  gap: 10px;
+.formButton {
+   display: grid;
+   grid-template-columns: 1fr 1fr 5fr;
+   gap: 15px;
+   margin: 10px;
+   padding-top: 10px;
 }
-.ser {
-  display: flex;
-  align-items: center;
-  height: fit-content;
-  border: 1px solid black;
-  border-radius: 5px;
-  padding: 0 5px;
+.formAddress {
+   display: grid;
+   grid-template-columns: 5fr 2fr;
+   padding: 10px;
+   position: relative;
 }
-/* .ser img {
-  padding-left: 5px;
-} */
-
-.inp {
-  height: full;
-  padding: 10px;
-  border: none;
-  font-size: 1rem;
+.formAddress input {
+   outline: none;
+   border: none;
+   background-color: #e9e9e9;
+   border-radius: 5px;
+   padding: 0 35px;
 }
 
-.hero-right {
-  position: relative;
+.search-icon {
+   position: absolute;
+   top: 50%;
+   transform: translateY(-50%);
+   left: 18px;
+   color: #fc7056;
 }
-.baseImg {
-  position: relative;
-  width: 450px;
-  bottom: -50px;
+
+.banner {
+   display: grid;
+   justify-content: end;
+   place-items: end;
 }
-/* .inputSearch {
-  display: flex;
-  align-items: center;
-  background-color: #fc7056;
-} */
+
+.banner img {
+   margin-top: 50px;
+
+   /* box-shadow: 10px 0px 50px 10px rgb(0, 0, 0); */
+}
