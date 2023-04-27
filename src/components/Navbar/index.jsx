@@ -3,6 +3,8 @@ import "./Navbar.css";
 import Map from "./Assats/map-marker-alt.png";
 import Search from "./Assats/Search.png";
 import User from "./Assats/user.png";
+import IconButton from "../Button";
+import { FaUserAlt } from "react-icons/fa";
 
 const Navbar = () => {
   return (
@@ -22,7 +24,7 @@ const Navbar = () => {
         </span>
         <span>
           <button className="btn">
-            <img src={User} /> Login
+            <FaUserAlt /> Login
           </button>
         </span>
       </div>

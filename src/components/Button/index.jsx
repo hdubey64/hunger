@@ -1,14 +1,12 @@
 import React from "react";
 import "./Button.css";
 
-function IconButton(props) {
+function IconButton({ label, color, onClick, icon }) {
   return (
-    <button className={`btn ${props.color}`} onClick={props.onClick}>
-      <span className="icon">
-        <img src={props.icon} />
-      </span>
+    <button className={`iconBtn ${color}`} onClick={onClick}>
+      {icon && <span className="icon">{icon}</span>}
 
-      {props.label}
+      {label}
     </button>
   );
 }
