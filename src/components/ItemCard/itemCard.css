@@ -1,0 +1,29 @@
+.mainItems {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   margin: 20px auto;
+   max-width: fit-content;
+}
+.content {
+   display: grid;
+   max-width: fit-content;
+}
+.content img {
+   border-radius: 20px;
+   width: 250px;
+}
+.content h5 {
+   color: black;
+   font-size: 1.3rem;
+   font-weight: 600;
+   margin: 20px 0;
+}
+.restaurent {
+   color: #ffb20e;
+   font-size: 1.3rem;
+}
+.price {
+   font-weight: 700;
+   font-size: 1.3rem;
+}
