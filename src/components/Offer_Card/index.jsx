@@ -17,10 +17,10 @@ const OfferCard = ({
                </div>
                <div className="offer">
                   <Row>
-                     <Col lg={6}>
+                     <Col xs={6} sm={6} md={6} lg={6}>
                         <h1>{offer}</h1>
                      </Col>
-                     <Col lg={6} className="offerUnit">
+                     <Col xs={6} sm={6} md={6} lg={6} className="offerUnit">
                         <span className="upper">%</span>
                         <span className="bottom">Off</span>
                      </Col>
