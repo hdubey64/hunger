@@ -1,6 +1,10 @@
 .main {
-   display: grid;
-   grid-template-columns: repeat(4, 1fr);
-   place-items: center;
+   /* display: grid;
+   grid-template-columns: repeat(4, 1fr); */
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   justify-content: space-evenly;
+   flex-wrap: wrap;
    padding: 4% 0;
 }
