@@ -1,10 +1,12 @@
 import React from "react";
 
-function ItemCard() {
+function ItemCard({ img = "", name = "", resturentName = "" }) {
    return (
       <div>
          <div className="container">
-            <h1>Vishal</h1>
+            <div className="main">
+               <img src={img} alt="" />
+            </div>
          </div>
       </div>
    );
