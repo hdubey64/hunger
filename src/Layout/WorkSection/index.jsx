@@ -6,54 +6,54 @@ import Pay from "../../Assets/Images/WorkImage/Bill_Slip.svg";
 import Meal from "../../Assets/Images/WorkImage/Donut.svg";
 import "./WorkSection.css";
 const WorkCards = [
-  {
-    img: {
-      png: Location,
-    },
-    title: "Select Location",
-    content: "Choose the location where your food will be delivered",
-    size: "50px",
-  },
-  {
-    img: {
-      png: Order,
-    },
-    title: "Choose order",
-    content: "Check over hunderds of menus to pick your favorite food",
-  },
-  {
-    img: {
-      png: Pay,
-    },
-    title: "Pay advanced",
-    content: "It's quick , safe and simple. Select several methods of payment",
-  },
-  {
-    img: {
-      png: Meal,
-    },
-    title: "Enjoy meals",
-    content: "Food is made and delivered directly to your home",
-  },
+   {
+      img: {
+         png: Location,
+      },
+      title: "Select Location",
+      content: "Choose the location where your food will be delivered",
+   },
+   {
+      img: {
+         png: Order,
+      },
+      title: "Choose order",
+      content: "Check over hunderds of menus to pick your favorite food",
+   },
+   {
+      img: {
+         png: Pay,
+      },
+      title: "Pay advanced",
+      content:
+         "It's quick , safe and simple. Select several methods of payment",
+   },
+   {
+      img: {
+         png: Meal,
+      },
+      title: "Enjoy meals",
+      content: "Food is made and delivered directly to your home",
+   },
 ];
 
 function WorkSection() {
-  return (
-    <div className=" workSectionContainer">
-      <div className="workSectionHead text-center">How does it's work</div>
-      <div className="container workSection">
-        {WorkCards.map((item) => (
-          <WorkCard
-            key={item.work}
-            img={item.img.png}
-            tittle={item.title}
-            content={item.content}
-            size={item.size}
-          />
-        ))}
+   return (
+      <div className=" workSectionContainer">
+         <div className="workSectionHead text-center">How does it's work</div>
+         <div className="container workSection">
+            {WorkCards.map((item) => (
+               <WorkCard
+                  key={item.work}
+                  img={item.img.png}
+                  tittle={item.title}
+                  content={item.content}
+                  size={item.size}
+               />
+            ))}
+         </div>
       </div>
-    </div>
-  );
+   );
 }
 
 export default WorkSection;
