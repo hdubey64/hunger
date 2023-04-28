@@ -18,7 +18,7 @@ function ItemCard({ img = "", name = "", restaurentName = "", price = "" }) {
                   <span className="price">{price}</span>
                </p>
 
-               <IconButton label="Order Now" color="btnColor" />
+               <IconButton label="Order Now" color="popularBtn" />
             </div>
          </div>
       </div>
