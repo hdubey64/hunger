@@ -49,7 +49,7 @@ const Hero = (props) => {
             </div>
             <div className="heroMainRight">
                <div className="banner">
-                  <img src={BaseImage} alt="" width={450} />
+                  <img src={BaseImage} alt="Hero Banner" />
                </div>
             </div>
          </div>

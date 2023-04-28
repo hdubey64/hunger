@@ -2,19 +2,27 @@
    max-height: fit-content;
    background-image: linear-gradient(to bottom, #ffc80d, #ffb607);
    padding-top: 7%;
+   border: 1px solid red;
 }
-.heroMain {
+/* .heroMain {
    display: grid;
    grid-template-columns: 1fr 1fr;
    place-items: start end;
    padding: 2% 2% 0 2%;
+} */
+.heroMain {
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   justify-content: space-around;
+   flex-wrap: wrap;
 }
-
-.heroMainLeftTitle {
-   margin: 2px auto;
+.heroMainLeft {
+   width: 700px;
+   padding-bottom: 7%;
 }
 .heroMainLeftTitle h1 {
-   font-size: 4rem;
+   font-size: 5rem;
    color: white;
    font-weight: 700;
 }
@@ -37,6 +45,7 @@
    display: grid;
    grid-template-columns: 5fr 2fr;
    padding: 10px;
+   grid-auto-flow: row dense;
    position: relative;
 }
 .formAddress input {
@@ -49,7 +58,7 @@
 
 .search-icon {
    position: absolute;
-   top: 50%;
+   top: 28px;
    transform: translateY(-50%);
    left: 18px;
    color: #fc7056;
@@ -63,6 +72,92 @@
 
 .banner img {
    margin-top: 50px;
+   width: 420px;
 
    /* box-shadow: 10px 0px 50px 10px rgb(0, 0, 0); */
+}
+
+/* @media (max-width: 575.98px) { ... }
+
+
+// Medium devices (tablets, less than 992px)
+@media (max-width: 991.98px) { ... }
+
+
+@media (max-width: 1199.98px) { ... }
+*/
+
+/* X-Large devices (large desktops, less than 1400px)*/
+@media (max-width: 1399.98px) {
+   .heroMainLeftTitle h1 {
+      font-size: 4rem;
+   }
+   .heroMainLeft {
+      width: 600px;
+   }
+   .formAddress {
+      grid-template-columns: 5fr 3fr;
+   }
+}
+/* Large devices (desktops, less than 1200px)*/
+@media (max-width: 1199.98px) {
+   .heroMainLeftTitle {
+      text-align: center;
+   }
+   .heroMainLeft {
+      width: 90%;
+   }
+}
+
+/* Small devices (landscape phones, less than 768px)*/
+@media (max-width: 767.98px) {
+   .heroMainLeftTitle h1 {
+      font-size: 3.5rem;
+   }
+   .heroMainLeft {
+      width: 100%;
+      padding: 5%;
+   }
+   .formAddress {
+      grid-template-columns: 1fr;
+      gap: 15px;
+   }
+   .formAddress input {
+      padding: 10px 35px;
+   }
+}
+
+@media (max-width: 575.98px) {
+   .heroMainLeftTitle {
+      text-align: center;
+   }
+   .heroMainLeftTitle h1 {
+      font-size: 2rem;
+   }
+   .heroMainLeftTitle {
+      padding: 0 5%;
+   }
+
+   .formAddress {
+      grid-template-columns: 1fr;
+      gap: 15px;
+   }
+   .formAddress input {
+      padding: 10px 35px;
+   }
+   .banner img {
+      width: 320px;
+   }
+}
+
+@media (max-width: 350.99px) {
+   .heroMainLeftTitle h1 {
+      font-size: 1.5rem;
+   }
+   .formButton {
+      grid-template-columns: 1fr;
+   }
+   .banner img {
+      width: 250px;
+   }
 }
