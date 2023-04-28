@@ -15,15 +15,14 @@
 }
 .content h5 {
    color: black;
-   font-size: 1.3rem;
+   font-size: 1rem;
    font-weight: 600;
-   margin: 20px 0;
+   margin-top: 10px;
+   margin-bottom: 0;
 }
 .restaurent {
    color: #ffb20e;
-   font-size: 1.3rem;
 }
 .price {
    font-weight: 700;
-   font-size: 1.3rem;
 }
