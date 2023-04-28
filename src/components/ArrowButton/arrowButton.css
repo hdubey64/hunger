@@ -1,0 +1,32 @@
+.scrollBtn {
+   border: 1px solid #ffb20e;
+   background-color: #ffb20e;
+   padding: 15px 22px;
+   border-radius: 50%;
+   box-shadow: 0px 10px 25px -4px #ffb20e;
+   margin: 40px;
+}
+.leftButton,
+.rightButton {
+   position: absolute;
+   top: 40%;
+   transform: translateY(-50%);
+   border: 1px solid #ffb20e;
+   color: #ffffff;
+   border-radius: 50%;
+   background-color: #ffb20e;
+}
+.leftButton {
+   left: -125px;
+}
+
+.rightButton {
+   right: -125px;
+}
+
+.leftButton:hover,
+.rightButton:hover {
+   border: 1px solid #ffb20e;
+   color: black;
+   background-color: white;
+}
