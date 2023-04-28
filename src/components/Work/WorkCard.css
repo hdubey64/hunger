@@ -1,0 +1,19 @@
+.workContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.workAbout {
+  text-align: center;
+}
+.workHeadTag {
+  color: #434343;
+  font-weight: 700;
+  margin-top: 15px;
+}
+.workHeadPara {
+  margin-top: -10px;
+  color: #b6b6b5;
+  width: 250px;
+}

@@ -4,7 +4,7 @@ import "./App.css";
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero/Hero";
 import PopularItemSection from "./Layout/PopularItemSection";
-import Work from "./components/Work";
+import WorkSection from "./Layout/WorkSection";
 
 function App() {
   return (
@@ -12,7 +12,7 @@ function App() {
       <Navbar />
       <Hero />
       <OfferSection />
-      <Work />
+      <WorkSection />
       <PopularItemSection />
     </div>
   );

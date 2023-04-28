@@ -1,16 +1,16 @@
 import React from "react";
+import "./WorkCard.css";
 
-function WorkCard() {
+function WorkCard({ img = "", tittle = "", content = "", size = "100px" }) {
   return (
-    <div>
-      <img src="" alt="image" />
-      <br />
-      <h3>Select location</h3>
-      <br />
-      <p>
-        choose the location where your <br />
-        food will delivered
-      </p>
+    <div className="workContent">
+      <div className="workBanner">
+        <img src={img} width={size} alt="" />
+      </div>
+      <div className="workAbout">
+        <p className="workHeadTag">{tittle}</p>
+        <p className="workHeadPara">{content}</p>
+      </div>
     </div>
   );
 }
