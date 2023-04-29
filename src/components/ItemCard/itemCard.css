@@ -11,7 +11,7 @@
 }
 .content img {
    border-radius: 20px;
-   width: 250px;
+   width: 280px;
 }
 .content h5 {
    color: black;
@@ -25,4 +25,10 @@
 }
 .price {
    font-weight: 700;
+}
+@media (max-width: 767.98px) {
+   .content img {
+      border-radius: 20px;
+      width: 260px;
+   }
 }
