@@ -55,6 +55,9 @@
   color: #ffa901;
   background-color: white;
 }
+.toggle {
+  display: none;
+}
 @media screen and (max-width: 1010px) {
   .navbar-mid {
     display: none;
@@ -67,8 +70,11 @@
   }
 }
 
-@media screen and (max-width: 427px) {
+@media screen and (max-width: 475.98px) {
   .btn {
     display: none;
+  }
+  .toggle {
+    display: block;
   }
 }
