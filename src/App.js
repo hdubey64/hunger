@@ -10,15 +10,15 @@ import RightArrow from "src/Assets/Images/Icons/IconLeftArraow.svg";
 import PopularItemSection from "./Layout/PopularItemSection";
 
 function App() {
-   return (
-      <div>
-         <Navbar />
-         <Hero />
-         <OfferSection />
-         <WorkSection />
-         <PopularItemSection />
-      </div>
-   );
+  return (
+    <div>
+      <Navbar />
+      <Hero />
+      <OfferSection />
+      <WorkSection />
+      <PopularItemSection />
+    </div>
+  );
 }
 
 export default App;
