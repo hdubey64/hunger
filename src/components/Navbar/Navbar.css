@@ -55,3 +55,20 @@
   color: #ffa901;
   background-color: white;
 }
+@media screen and (max-width: 1010px) {
+  .navbar-mid {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 567px) {
+  .sear {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 427px) {
+  .btn {
+    display: none;
+  }
+}

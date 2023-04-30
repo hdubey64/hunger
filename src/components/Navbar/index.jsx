@@ -2,9 +2,10 @@ import React from "react";
 import "./Navbar.css";
 import Map from "./Assats/map-marker-alt.png";
 import Search from "./Assats/Search.png";
-import User from "./Assats/user.png";
-import IconButton from "../Button";
 import { FaUserAlt } from "react-icons/fa";
+import AcUnitIcon from "@mui/icons-material/AcUnit";
+import PersonIcon from "@mui/icons-material/Person";
+import SearchIcon from "@mui/icons-material/Search";
 
 const Navbar = () => {
   return (
