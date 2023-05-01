@@ -1,0 +1,11 @@
+.featuredMain {
+   margin: 40px auto;
+   display: grid;
+   grid-template-rows: 1fr 2fr 1fr;
+   place-items: center;
+}
+
+.featuredMain h1 {
+   font-size: 2.5rem;
+   font-weight: 700;
+}

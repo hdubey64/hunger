@@ -44,7 +44,7 @@ const cardData = [
 
 const OfferSection = () => {
    return (
-      <div className="main container">
+      <div className="main container mt-5">
          {cardData.map((item) => (
             <OfferCard
                key={item.offer}

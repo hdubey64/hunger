@@ -1,19 +1,13 @@
 .workSectionContainer {
-  padding: 50px 0;
-  background-image: linear-gradient(to top, #fff, #fff9ed);
+   padding: 50px 0;
+   background-image: linear-gradient(to top, #fff, #fff9ed);
 }
 .workSection {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-evenly;
-  flex-wrap: wrap;
-  padding: 4% 0;
-  gap: 10px;
-}
-.workSectionHead {
-  padding-bottom: 30px;
-  font-size: 2rem;
-  font-weight: 700;
-  color: #f17228;
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   justify-content: space-evenly;
+   flex-wrap: wrap;
+   padding: 4% 0;
+   gap: 10px;
 }

@@ -9,6 +9,7 @@ import "./popularItemSection.css";
 import ArrowButton from "src/components/ArrowButton";
 import LeftArrow from "src/Assets/Images/Icons/IconLeftArraow.svg";
 import RightArrow from "src/Assets/Images/Icons/IconRightArrow.svg";
+import SectionHeader from "src/components/SectionHeader";
 
 const PopularItemSection = () => {
    const scrollContainerRef = useRef(null);
@@ -65,6 +66,7 @@ const PopularItemSection = () => {
 
    return (
       <div className="popularItemSectionContent">
+         <SectionHeader Text="Popular Items" />
          <div className="scroll-container" ref={scrollContainerRef}>
             <div className="scroll-content">
                {moneyData.map((item) => (
