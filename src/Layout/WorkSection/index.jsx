@@ -5,6 +5,7 @@ import Order from "../../Assets/Images/WorkImage/Order.svg";
 import Pay from "../../Assets/Images/WorkImage/Bill_Slip.svg";
 import Meal from "../../Assets/Images/WorkImage/Donut.svg";
 import "./WorkSection.css";
+import SectionHeader from "src/components/SectionHeader";
 const WorkCards = [
    {
       img: {
@@ -40,7 +41,12 @@ const WorkCards = [
 function WorkSection() {
    return (
       <div className=" workSectionContainer">
-         <div className="workSectionHead text-center">How does it's work</div>
+         <header>
+            <SectionHeader
+               Text="How does it's work"
+               className="workSectionHead"
+            />
+         </header>
          <div className="container workSection">
             {WorkCards.map((item) => (
                <WorkCard
