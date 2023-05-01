@@ -1,12 +1,15 @@
 import React from "react";
 import "./Button.css";
 
-function IconButton({ label, color, onClick, icon }) {
+function IconButton({ label, color, onClick, icon, iconPostion = "start" }) {
    return (
       <button className={`iconBtn ${color}`} onClick={onClick}>
-         {icon && <span className="icon">{icon}</span>}
+         {icon && iconPostion === "start" && (
+            <span className="icon">{icon}</span>
+         )}
 
          {label}
+         {icon && iconPostion === "end" && <span className="icon">{icon}</span>}
       </button>
    );
 }
