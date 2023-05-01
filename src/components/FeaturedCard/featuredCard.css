@@ -1,0 +1,29 @@
+.offerPrice {
+   display: flex;
+   position: relative;
+   top: 60px;
+   right: 40px;
+}
+
+.offerPrice p {
+   border-radius: 10px;
+   text-align: center;
+   color: white;
+   padding: 4px 15px;
+   margin: 0 7px;
+   font-size: 18px;
+   font-weight: 700;
+}
+.offerPrice p:nth-child(1) {
+   background-color: #f17228;
+   border: 1px solid #fc7056;
+}
+.offerPrice p:nth-child(2) {
+   background-color: #ffb20e;
+   border: 1px solid #ffb20e;
+}
+
+.featuredMain img {
+   width: 350px;
+   border-radius: 10px;
+}

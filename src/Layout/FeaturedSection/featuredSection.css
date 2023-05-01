@@ -1,7 +1,7 @@
 .featuredMain {
    margin: 40px auto;
    display: grid;
-   grid-template-rows: 1fr 2fr 1fr;
+
    place-items: center;
 }
 
