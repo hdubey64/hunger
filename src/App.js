@@ -6,7 +6,6 @@ import WorkSection from "./Layout/WorkSection";
 import PopularItemSection from "./Layout/PopularItemSection";
 import FeaturedSection from "./Layout/FeaturedSection";
 
-
 function App() {
   return (
     <div>
@@ -18,6 +17,5 @@ function App() {
       <FeaturedSection />
     </div>
   );
-
-
+}
 export default App;
