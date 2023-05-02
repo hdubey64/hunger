@@ -1,7 +1,6 @@
 import React from "react";
-import OfferCard from "../../components/Offer_Card";
+import OfferCard from "../../components/OfferCard";
 import "./style.css";
-
 import PicOne from "src/Assets/Images/Image-15.png";
 import PicTwo from "src/Assets/Images/Image-10.png";
 import PicThree from "src/Assets/Images/Image-25.png";
@@ -10,33 +9,25 @@ import PicFour from "src/Assets/Images/Image-20.png";
 const cardData = [
    {
       offer: "15",
-      img: {
-         png: PicOne,
-      },
+      img: PicOne,
       cardHead: "Greys Vage",
       offerRemainingTime: "6 Days Remaining",
    },
    {
       offer: "10",
-      img: {
-         png: PicTwo,
-      },
+      img: PicTwo,
       cardHead: "Greys Vage",
       offerRemainingTime: "6 Days Remaining",
    },
    {
       offer: "25",
-      img: {
-         png: PicThree,
-      },
+      img: PicThree,
       cardHead: "Greys Vage",
       offerRemainingTime: "7 Days Remaining",
    },
    {
       offer: "20",
-      img: {
-         png: PicFour,
-      },
+      img: PicFour,
       cardHead: "Greys Vage",
       offerRemainingTime: "8 Days Remaining",
    },
@@ -44,15 +35,9 @@ const cardData = [
 
 const OfferSection = () => {
    return (
-      <div className="main container">
+      <div className="main container mt-5">
          {cardData.map((item) => (
-            <OfferCard
-               key={item.offer}
-               offer={item.offer}
-               img={item.img.png}
-               cardHead={item.cardHead}
-               offerRemainingTime={item.offerRemainingTime}
-            />
+            <OfferCard data={item} key={item.offer} />
          ))}
       </div>
    );

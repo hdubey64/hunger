@@ -1,13 +1,10 @@
 import React from "react";
 import "./style.css";
 import { Row, Col } from "reactstrap";
+import PropTypes from "prop-types";
 
-const OfferCard = ({
-   offer = "Offer",
-   img = "",
-   cardHead = "Card Head",
-   offerRemainingTime = "Offer Remaining Time ",
-}) => {
+const OfferCard = ({ data }) => {
+   const { offer, img, cardHead, offerRemainingTime } = data;
    return (
       <div className="parent">
          <div ClassName="productOfferCard">
@@ -37,6 +34,15 @@ const OfferCard = ({
          </div>
       </div>
    );
+};
+
+OfferCard.propTypes = {
+   data: PropTypes.shape({
+      offer: PropTypes.string.isRequired,
+      img: PropTypes.string.isRequired,
+      cardHead: PropTypes.string.isRequired,
+      offerRemainingTime: PropTypes.string.isRequired,
+   }).isRequired,
 };
 
 export default OfferCard;

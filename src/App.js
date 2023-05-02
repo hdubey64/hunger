@@ -1,13 +1,10 @@
-import OfferSection from "./Layout/OfferSection";
-
 import "./App.css";
+import OfferSection from "./Layout/OfferSection";
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero/Hero";
 import WorkSection from "./Layout/WorkSection";
-import HorizontalScroll from "./Layout/PopularItemSection";
-import ArrowButton from "./components/ArrowButton";
-import RightArrow from "src/Assets/Images/Icons/IconLeftArraow.svg";
 import PopularItemSection from "./Layout/PopularItemSection";
+import FeaturedSection from "./Layout/FeaturedSection";
 import DrawerAppBar from "./components/Navbar";
 
 function App() {
@@ -18,8 +15,9 @@ function App() {
       <OfferSection />
       <WorkSection />
       <PopularItemSection />
+       <FeaturedSection />
     </div>
   );
-}
+
 
 export default App;

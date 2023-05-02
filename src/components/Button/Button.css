@@ -11,6 +11,7 @@
    background-color: #ffffffe0;
    color: #fc7056;
    border: 1px Solid #fc7056;
+   transform: translateY(-2px);
 }
 
 .icon {
@@ -49,7 +50,25 @@
    color: white;
    border-radius: 5px;
    display: inline;
+   padding: 10px 25px;
 }
+.featuredBtn {
+   /* background: linear-gradient(to right, #ffc80d, #ffb607); */
+   background-color: #ffb20e;
+   border: 1px Solid #ffb20e;
+   color: white;
+   border-radius: 12px;
+   box-shadow: 0px 10px 25px -8px #ffb20e;
+   padding: 15px 30px;
+   display: grid;
+   grid-template-columns: 3fr 1fr;
+   place-items: center;
+}
+.featuredBtn:hover {
+   color: #ffb20e;
+   border: 1px Solid #ffb20e;
+}
+
 /* Small devices (landscape phones, less than 768px)*/
 @media (max-width: 767.98px) {
    .btnColor {
