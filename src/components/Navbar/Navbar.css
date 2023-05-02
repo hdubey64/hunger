@@ -78,3 +78,27 @@
     display: block;
   }
 }
+
+.searchitems {
+  width: fit-content;
+}
+.btn2 {
+  margin: auto;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 18px;
+  font-weight: 700;
+  padding: 10px 15px;
+  border: none;
+
+  box-shadow: 0px 10px 12px 2px #ffdd99c8;
+  border-radius: 8px;
+  color: #ffa901;
+  background-color: white;
+}
+.navsearch {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  padding: 0 20px;
+}
