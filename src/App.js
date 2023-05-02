@@ -8,11 +8,12 @@ import HorizontalScroll from "./Layout/PopularItemSection";
 import ArrowButton from "./components/ArrowButton";
 import RightArrow from "src/Assets/Images/Icons/IconLeftArraow.svg";
 import PopularItemSection from "./Layout/PopularItemSection";
+import DrawerAppBar from "./components/Navbar";
 
 function App() {
   return (
     <div>
-      <Navbar />
+      <DrawerAppBar />
       <Hero />
       <OfferSection />
       <WorkSection />
