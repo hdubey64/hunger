@@ -15,7 +15,7 @@ function App() {
       <OfferSection />
       <WorkSection />
       <PopularItemSection />
-       <FeaturedSection />
+      <FeaturedSection />
     </div>
   );
 
