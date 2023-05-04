@@ -4,6 +4,7 @@ import IconButton from "src/components/Button";
 import FeaturedCard from "src/components/FeaturedCard";
 import "./featuredSection.css";
 import SectionHeader from "src/components/SectionHeader";
+import { featuredSectionData } from "src/data";
 
 const FeaturedSection = () => {
    return (
@@ -14,7 +15,9 @@ const FeaturedSection = () => {
          </header>
 
          <div className="featuredContent">
-            <FeaturedCard />
+            {featuredSectionData.map((item) => (
+               <FeaturedCard data={item} key={item.offer} />
+            ))}
          </div>
          <footer>
             <IconButton

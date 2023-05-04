@@ -1,11 +1,21 @@
-.featuredMain {
+header {
    margin: 40px auto;
+}
+.featuredMain {
    display: grid;
-
    place-items: center;
+   margin: 10px auto;
 }
 
 .featuredMain h1 {
    font-size: 2.5rem;
    font-weight: 700;
+}
+.featuredContent {
+   display: grid;
+   grid-template-columns: repeat(4, 1fr);
+   grid-auto-flow: dense;
+}
+footer {
+   margin: 60px auto;
 }
