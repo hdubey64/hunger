@@ -4,41 +4,58 @@ import {
    Sell as SellIcon,
    WatchLater as WatchLaterIcon,
    Star as StarIcon,
-   Star,
 } from "@mui/icons-material";
+import PropTypes from "prop-types";
 
-import Foodworld from "src/Assets/Images/FeaturedImages/FoodWorld.svg";
-import FoodworldIcon from "src/Assets/Images/FeaturedImages/FoodWorldIcon.svg";
-
-const FeaturedCard = ({ offer = "" }) => {
+const FeaturedCard = ({ data }) => {
+   const { offer, img, imgIcon, tittle, rating, isOpen, storeStatus } = data;
    return (
       <div className="container">
          <div className="featuredMain">
             <div className="offerPrice">
                <p className="sellTag">
-                  <SellIcon /> 20%off
+                  <SellIcon sx={{ fontSize: 20 }} /> {offer}
                </p>
                <p className="timmerTag">
                   {" "}
-                  <WatchLaterIcon /> Fast
+                  <WatchLaterIcon sx={{ fontSize: 20 }} /> Fast
                </p>
             </div>
-            <img src={Foodworld} alt="" />
+            <img src={img} className="banner" alt="" />
          </div>
          <div className="featuredTitle">
-            <img src="" alt="" />
             <div className="featuredTitleHead">
-               <img src={FoodworldIcon} alt="Card Icon" />
-               <h5>Food World</h5>
-               <div className="star">
-                  <Star />
-                  <p>46</p>
+               <img src={imgIcon} width={50} alt="Card Icon" />
+               <div>
+                  <p className="featuredTitleHeadContent">{tittle}</p>
+                  <p className="star">
+                     <span>
+                        {" "}
+                        <StarIcon sx={{ fontSize: 20 }} />
+                     </span>
+                     {rating}
+                  </p>
                </div>
-            </div>
-            <p>Opens Tomarrow</p>
+            </div>{" "}
+            <p className={`${isOpen ? "open" : "closed"}`}>
+               {isOpen ? "Open Now" : "Opens Tomarrow"}
+            </p>
          </div>
       </div>
    );
+
+   return "";
+};
+
+FeaturedCard.propTypes = {
+   data: PropTypes.shape({
+      offer: PropTypes.string.isRequired,
+      img: PropTypes.string.isRequired,
+      imgIcon: PropTypes.string.isRequired,
+      tittle: PropTypes.string.isRequired,
+      rating: PropTypes.number.isRequired,
+      isOpen: PropTypes.bool.isRequired,
+   }).isRequired,
 };
 
 export default FeaturedCard;
