@@ -10,8 +10,8 @@ import PropTypes from "prop-types";
 const FeaturedCard = ({ data }) => {
    const { offer, img, imgIcon, tittle, rating, isOpen, storeStatus } = data;
    return (
-      <div className="container">
-         <div className="featuredMain">
+      <div className="featuredCardMain">
+         <div className="featuredMainImg">
             <div className="offerPrice">
                <p className="sellTag">
                   <SellIcon sx={{ fontSize: 20 }} /> {offer}
@@ -22,24 +22,24 @@ const FeaturedCard = ({ data }) => {
                </p>
             </div>
             <img src={img} className="banner" alt="" />
-         </div>
-         <div className="featuredTitle">
-            <div className="featuredTitleHead">
-               <img src={imgIcon} width={50} alt="Card Icon" />
-               <div>
-                  <p className="featuredTitleHeadContent">{tittle}</p>
-                  <p className="star">
-                     <span>
-                        {" "}
-                        <StarIcon sx={{ fontSize: 20 }} />
-                     </span>
-                     {rating}
-                  </p>
-               </div>
-            </div>{" "}
-            <p className={`${isOpen ? "open" : "closed"}`}>
-               {isOpen ? "Open Now" : "Opens Tomarrow"}
-            </p>
+            <div className="featuredTitle">
+               <div className="featuredTitleHead">
+                  <img src={imgIcon} width={50} alt="Card Icon" />
+                  <div>
+                     <p className="featuredTitleHeadContent">{tittle}</p>
+                     <p className="star">
+                        <span>
+                           {" "}
+                           <StarIcon sx={{ fontSize: 20 }} />
+                        </span>
+                        {rating}
+                     </p>
+                  </div>
+               </div>{" "}
+               <p className={`${isOpen ? "open" : "closed"}`}>
+                  {isOpen ? "Open Now" : "Opens Tomarrow"}
+               </p>
+            </div>
          </div>
       </div>
    );
