@@ -65,8 +65,8 @@ const PopularItemSection = () => {
    ];
 
    return (
-      <div className="popularItemSectionContent">
-         <SectionHeader Text="Popular Items" />
+      <div className="popularItemSectionContent container">
+         <SectionHeader className="center" Text="Popular Items" />
          <div className="scroll-container" ref={scrollContainerRef}>
             <div className="scroll-content">
                {moneyData.map((item) => (

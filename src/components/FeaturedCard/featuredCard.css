@@ -1,8 +1,18 @@
+.featuredCardMain {
+   display: flex;
+   justify-content: center;
+}
+
+.featuredMainImg {
+   display: grid;
+
+   margin-bottom: 20px;
+}
 .offerPrice {
    display: flex;
    position: relative;
    top: 48px;
-   right: 30px;
+   left: 10px;
 }
 
 .offerPrice > p {
@@ -23,9 +33,12 @@
 }
 
 .banner {
-   width: 300px;
-
+   width: 280px;
    border-radius: 15px;
+}
+.featuredTitle {
+   display: inline-block;
+   margin-top: 20px;
 }
 
 .featuredTitleHead {
@@ -62,4 +75,10 @@
    color: #f17228;
    font-weight: 700;
    padding: 2px 15px 3px 15px;
+}
+
+@media (max-width: 1198.99px) {
+   .featuredCardMain {
+      margin: 0 10px;
+   }
 }
