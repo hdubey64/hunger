@@ -30,4 +30,24 @@ export default [
     img: Steak,
     cardHead: "Steak",
   },
+  {
+    img: Steak,
+    cardHead: "Steak",
+  },
+  {
+    img: Steak,
+    cardHead: "Steak",
+  },
+  {
+    img: Steak,
+    cardHead: "Steak",
+  },
+  {
+    img: Steak,
+    cardHead: "Steak",
+  },
+  {
+    img: Steak,
+    cardHead: "Steak",
+  },
 ];

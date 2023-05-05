@@ -5,7 +5,6 @@ import OfferSection from "./Layout/OfferSection";
 import WorkSection from "./Layout/WorkSection";
 import PopularItemSection from "./Layout/PopularItemSection";
 import FeaturedSection from "./Layout/FeaturedSection";
-import SearchByFood from "./components/SearchByFood";
 import SearchByFoodSection from "./Layout/SearchByFoodSection";
 
 function App() {
@@ -18,7 +17,6 @@ function App() {
       <PopularItemSection />
       <FeaturedSection />
       <SearchByFoodSection />
-      <SearchByFood />
     </div>
   );
 }
