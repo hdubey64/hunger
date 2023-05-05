@@ -6,6 +6,7 @@ import WorkSection from "./Layout/WorkSection";
 import PopularItemSection from "./Layout/PopularItemSection";
 import FeaturedSection from "./Layout/FeaturedSection";
 import SearchByFoodSection from "./Layout/SearchByFoodSection";
+import MenuSection from "./Layout/MenuSection/MenuSection";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
       <PopularItemSection />
       <FeaturedSection />
       <SearchByFoodSection />
+      <MenuSection />
     </div>
   );
 }
