@@ -1,33 +1,33 @@
-import PickOne from "../Assets/Images/SearchByFood/Image.svg";
-import PickTwo from "../Assets/Images/SearchByFood/Image (1).svg";
-import PickThree from "../Assets/Images/SearchByFood/Image(2).svg";
-import PickFour from "../Assets/Images/SearchByFood/Image(3).svg";
-import PickFive from "../Assets/Images/SearchByFood/Image(4).svg";
-import PickSix from "../Assets/Images/SearchByFood/Image(5).svg";
+import Pizza from "src/Assets/Images/SearchByFood/Image.svg";
+import Burger from "src/Assets/Images/SearchByFood/Image_1.svg";
+import Noodles from "src/Assets/Images/SearchByFood/Image_2.svg";
+import SubSandwch from "src/Assets/Images/SearchByFood/Image_3.svg";
+import Chowmein from "src/Assets/Images/SearchByFood/Image_4.svg";
+import Steak from "src/Assets/Images/SearchByFood/Image_5.svg";
 
 export default [
   {
-    img: PickOne,
+    img: Pizza,
     cardHead: "Pizza",
   },
   {
-    img: PickTwo,
+    img: Burger,
     cardHead: "Burger",
   },
   {
-    img: PickThree,
+    img: Noodles,
     cardHead: "Noodles",
   },
   {
-    img: PickFour,
+    img: SubSandwch,
     cardHead: "Sub-sandwch",
   },
   {
-    img: PickFive,
+    img: Chowmein,
     cardHead: "Chowmein",
   },
   {
-    img: PickSix,
+    img: Steak,
     cardHead: "Steak",
   },
 ];
