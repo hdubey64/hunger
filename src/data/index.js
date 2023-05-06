@@ -4,4 +4,4 @@ export { default as featuredSectionData } from "./featured-section.data";
 
 export { default as SearchByFoodSection } from "./searchFood-section.data";
 
-export { default as MenuSection } from "./Menu-Section.data";
+export { default as MenuSectionData } from "./Menu-Section.data";
