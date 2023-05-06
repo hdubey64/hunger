@@ -6,60 +6,14 @@ import LeftArrow from "src/Assets/Images/Icons/IconLeftArraow.svg";
 import { FaAngleRight, FaArrowRight } from "react-icons/fa";
 import SectionHeader from "../SectionHeader";
 
-function SearchByFood() {
+function SearchByFood({ data }) {
+  const { img, searchItems, cardHead } = data;
   return (
-    <div className=" border searchByFoodHead">
-      <div className="container">
-        <div className="searchByFoodMain">
-          <SectionHeader Text="Search By Food" />
-
-          <div className="searchView">
-            <p>
-              View All <FaAngleRight />
-            </p>
-            <div className="arrowView">
-              <ArrowButton img={LeftArrow} customClass="sliderButton" />
-              <ArrowButton img={RightArrow} customClass="sliderButton" />
-            </div>
-          </div>
-        </div>
-        <div className="searchFooter">
-          <div>
-            <img
-              src="https://www.indianhealthyrecipes.com/wp-content/uploads/2015/10/pizza-recipe-1.jpg"
-              alt=""
-            />
-            <p>pizza</p>
-          </div>
-          <div>
-            <img
-              src="https://www.indianhealthyrecipes.com/wp-content/uploads/2015/10/pizza-recipe-1.jpg"
-              alt=""
-            />
-            <p>pizza</p>
-          </div>
-          <div>
-            <img
-              src="https://www.indianhealthyrecipes.com/wp-content/uploads/2015/10/pizza-recipe-1.jpg"
-              alt=""
-            />
-            <p>pizza</p>
-          </div>
-          <div>
-            <img
-              src="https://www.indianhealthyrecipes.com/wp-content/uploads/2015/10/pizza-recipe-1.jpg"
-              alt=""
-            />
-            <p>pizza</p>
-          </div>
-          <div>
-            <img
-              src="https://www.indianhealthyrecipes.com/wp-content/uploads/2015/10/pizza-recipe-1.jpg"
-              alt=""
-            />
-            <p>pizza</p>
-          </div>
-        </div>
+    <div className="  searchByFoodHead">
+      <div className="searchFooter">
+        <img src={img} alt="" />
+        <br />
+        <p>{cardHead}</p>
       </div>
     </div>
   );

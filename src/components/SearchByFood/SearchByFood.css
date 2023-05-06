@@ -1,44 +1,22 @@
 .searchByFoodHead {
   background-color: #fefaf1;
-  padding: 0 50px;
 }
-
-.searchByFoodMain {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-/* .searchByFoodMain h2 {
-  font-weight: 700;
-} */
-.searchView {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  justify-content: center;
-  align-items: center;
-}
-.arrowView {
-  display: grid;
-  gap: 0;
-  grid-template-columns: 1fr 1fr;
-}
-.searchView p {
-  font-weight: 600;
-  color: #ffb20e;
-}
-.sliderButton {
-  margin: 10px;
-}
-
 .searchFooter {
-  display: flex;
-  margin: auto;
+  margin: auto 20px;
   align-items: center;
-  justify-content: space-evenly;
   border-radius: 30px;
   text-align: center;
+  transition: transform 0.3s;
 }
 .searchFooter img {
-  width: 200px;
+  margin-top: 50px;
+  width: 180px;
   border-radius: 50%;
+}
+.searchFooter:hover {
+  transform: scale(1.2);
+}
+.searchFooter p {
+  font-size: 1rem;
+  font-weight: 700;
 }
