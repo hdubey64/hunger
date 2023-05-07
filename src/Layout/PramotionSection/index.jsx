@@ -14,21 +14,24 @@ const PramotionSection = () => {
                <div className="pramotionCardBox">
                   <div className="pramotionSectionDisscount pramotionIconSetup">
                      <DisscountIcon />
-                     <h1>
-                        Daily <span>Disscount</span>
-                     </h1>
+                     <h3>
+                        Daily <br />
+                        Disscount
+                     </h3>
+                     <div className="divider"></div>
                   </div>
                   <div className="pramotionSectionTracing pramotionIconSetup">
                      <TracingIcon />
-                     <h1>
-                        Live <span>Tracing</span>
-                     </h1>
+                     <h3>
+                        Live <br /> Tracing
+                     </h3>
+                     <div className="divider"></div>
                   </div>
-                  <div className="pramotionSectionDelivery pramotionIconSetup">
+                  <div className="pramotionSectionDelivery pramotionIconSetup ">
                      <DeliveryIcon />
-                     <h1>
-                        Quick<span> Delivery </span>
-                     </h1>
+                     <h3>
+                        Quick <br /> Delivery
+                     </h3>
                   </div>
                </div>
             </div>
@@ -46,20 +49,22 @@ const PramotionSection = () => {
                      </p>
                   </div>
                   <div className="pramotionCardContentRightStore">
-                     <div className="pramotionCardContentRightPlayStore">
+                     <div className="pramotionCardContentRightApp">
                         <a href="#">
                            <PlayStoreIcon />
-                           <div className="playStoteText">
+                           <div className="storeText">
                               <p>GET IT ON</p>
-                              <h5>Google Play</h5>
+                              <h4>Google Play</h4>
                            </div>
                         </a>
                      </div>
-                     <div className="pramotionCardContentRightAppleStore">
+                     <div className="pramotionCardContentRightApp">
                         <a href="#">
                            <AppleStoreIcon />
-                           <p>Download on the </p>
-                           <h5>App Store</h5>
+                           <div className="storeText">
+                              <p>Download on the </p>
+                              <h4>App Store</h4>
+                           </div>
                         </a>
                      </div>
                   </div>
