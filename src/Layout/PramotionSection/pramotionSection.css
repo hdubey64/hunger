@@ -67,7 +67,7 @@
    border-right: 5px Solid #cfcfcf;
    top: -35px;
    left: -50px;
-   z-index: 9999;
+   z-index: 1;
    /* margin-right: 40px; */
 }
 
@@ -87,8 +87,8 @@
    height: 500px;
    top: 0px;
    z-index: 1;
-   filter: drop-shadow(0px 12.8649px 13.7838px rgba(255, 174, 0, 0.01))
-      drop-shadow(0px 24.8108px 75.3513px rgba(255, 174, 0, 0.28));
+   filter: drop-shadow(0px -20px 50px rgba(255, 174, 0, 0.01))
+      drop-shadow(0px -20px 50px rgba(255, 174, 0, 0.28));
 }
 /* .pramotionCardContentRight {
    /* border: 5px Solid rgb(0, 255, 34); 
@@ -111,7 +111,7 @@
    background-clip: text;
 }
 .pramotionCardContentRightHead p {
-   padding: 20px 40px;
+   padding: 20px 150px 20px 165px;
    color: #837e7e;
 }
 
@@ -156,6 +156,10 @@
       top: -35px;
       left: -80px;
    }
+   .pramotionCardContentRightHead p {
+      padding: 20px 70px 20px 75px;
+      color: #837e7e;
+   }
 }
 
 @media (max-width: 1199.98px) {
@@ -169,6 +173,10 @@
    }
    .pramotionCardBox {
       margin: 20px auto;
+   }
+   .pramotionCardContentRightHead p {
+      padding: 20px 30px 20px 35px;
+      color: #837e7e;
    }
 }
 
@@ -200,6 +208,12 @@
    .pramotionCardContentRightHead p {
       text-align: center;
       padding: 20px 120px;
+   }
+   .pramotionCardContent {
+      margin-top: 100px;
+   }
+   .pramotionCardContentRightStore {
+      margin-bottom: 100px;
    }
 }
 
