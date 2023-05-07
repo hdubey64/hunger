@@ -62,7 +62,7 @@
 .divider::after {
    content: "";
    position: absolute;
-   width: 5vw;
+   width: 3vw;
    height: 75px;
    border-right: 5px Solid #cfcfcf;
    top: -35px;
@@ -183,7 +183,7 @@
 @media (max-width: 991.98px) {
    .divider::after {
       width: 400px;
-      height: 5px;
+      height: 3px;
       top: 100px;
       left: -350px;
       background-color: #cfcfcf;
