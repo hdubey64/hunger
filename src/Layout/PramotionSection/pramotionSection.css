@@ -1,0 +1,13 @@
+.pramotionSection {
+   /* width: 99vw;*/
+   height: 100%;
+   background-image: url(../../Assets/Images/PramotionSection/BackgroundImg.png);
+   background-repeat: no-repeat;
+   background-position: center;
+   background-size: cover;
+   /* object-fit: fill; */
+}
+
+.pramotionSectionMain {
+   display: flex;
+}
