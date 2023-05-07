@@ -15,38 +15,41 @@
 } */
 
 .pramotionSectionMain {
-   padding: 100px 150px 0 150px;
+   padding: 100px 50px 0 50px;
    /* border: 1px Solid green; */
 }
 .pramotionCard {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+
+   padding: 0;
+   margin: 0;
+}
+.pramotionCardBox {
+   border: 5px Solid green;
+   display: grid;
+   grid-template-columns: 2fr 1fr 2fr;
+   place-items: center;
+   flex-wrap: wrap;
    border: none;
    background-color: #fff;
    border-radius: 25px;
    padding: 20px;
 }
 
-.pramotionCardBox {
-   display: flex;
-   align-items: center;
-   justify-content: space-evenly;
-}
 .pramotionIconSetup {
    /* width: 250px; */
    display: flex;
    align-items: center;
-
-   /* flex-wrap: wrap; */
 }
 .pramotionIconSetup h3 {
-   /* max-width: 200px; */
-
+   width: 200px;
    padding-left: 15px;
    background-image: linear-gradient(45deg, #fb3c00, #ffb800);
    font-weight: 700;
-
    background-size: 100%;
    background-repeat: repeat;
-
    -webkit-background-clip: text;
    -webkit-text-fill-color: transparent;
    -moz-background-clip: text;
@@ -54,25 +57,34 @@
    background-clip: text;
 }
 .divider {
+   position: relative;
+}
+.divider::after {
+   content: "";
+   position: absolute;
    width: 5vw;
    height: 75px;
-   border-right: 2px Solid #cfcfcf;
-   margin-right: 40px;
+   border-right: 5px Solid #cfcfcf;
+   top: -35px;
+   left: -50px;
+   z-index: 9999;
+   /* margin-right: 40px; */
 }
 
 .pramotionCardContent {
    margin: 0;
    margin-top: 30px;
    display: flex;
+   flex-direction: row;
    align-items: center;
+   /* justify-content: center; */
+   /* flex-wrap: wrap; */
 }
-/* .pramotionCardContentLeft {
-   border: 1px Solid cyan;
-} */
+
 .pramotionCardContentLeft img {
    position: relative;
    width: 550px;
-   height: 550px;
+   height: 500px;
    top: 0px;
    z-index: 1;
    filter: drop-shadow(0px 12.8649px 13.7838px rgba(255, 174, 0, 0.01))
@@ -138,4 +150,113 @@
 }
 .storeText h4 {
    margin-bottom: -2px;
+}
+@media (max-width: 1399.98px) {
+   .divider::after {
+      top: -35px;
+      left: -80px;
+   }
+}
+
+@media (max-width: 1199.98px) {
+   .divider::after {
+      top: -35px;
+      left: -80px;
+   }
+   .pramotionSectionMain {
+      padding: 0;
+      padding-top: 100px;
+   }
+   .pramotionCardBox {
+      margin: 20px auto;
+   }
+}
+
+@media (max-width: 991.98px) {
+   .divider::after {
+      width: 400px;
+      height: 5px;
+      top: 100px;
+      left: -350px;
+      background-color: #cfcfcf;
+   }
+
+   .pramotionCardBox {
+      /* justify-content: center; */
+      display: grid;
+      grid-template-columns: 1fr;
+      place-items: center;
+   }
+   .pramotionIconSetup {
+      width: 400px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 40px 20px;
+   }
+   .pramotionCardContent {
+      flex-direction: column-reverse;
+   }
+   .pramotionCardContentRightHead p {
+      text-align: center;
+      padding: 20px 120px;
+   }
+}
+
+@media (max-width: 767.98px) {
+   .divider::after {
+      top: 100px;
+      left: -325px;
+      width: 350px;
+   }
+   .pramotionCardContentLeft img {
+      width: 450px;
+      height: 400px;
+   }
+}
+
+@media (max-width: 575.98px) {
+   .divider::after {
+      top: 100px;
+      left: -325px;
+      width: 350px;
+   }
+   .pramotionCardBox {
+      padding: 0;
+      justify-content: center;
+   }
+   .pramotionIconSetup {
+      justify-content: center;
+   }
+
+   .pramotionCard {
+      padding: 20px;
+   }
+   .pramotionCardContentRightHead h1 {
+      font-size: 2.5rem !important;
+   }
+   .pramotionCardContentRightHead p {
+      padding: 20px 80px;
+   }
+   .pramotionCardContentLeft img {
+      width: 400px;
+      height: 350px;
+   }
+}
+@media (max-width: 449.98px) {
+   .divider::after {
+      top: 100px;
+      left: -300px;
+      width: 300px;
+   }
+   .pramotionCardBox {
+      width: 350px;
+   }
+   .pramotionCardContentRightHead p {
+      padding: 20px 60px;
+   }
+   .pramotionCardContentLeft img {
+      width: 350px;
+      height: 300px;
+   }
 }
