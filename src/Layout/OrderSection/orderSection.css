@@ -1,0 +1,10 @@
+.orderSection {
+   height: 92vh;
+   background-image: conic-gradient(
+      rgb(0, 225, 255, 0.8),
+      rgb(255, 0, 115, 0.8),
+      rgb(0, 255, 140, 0.8),
+      rgb(225, 0, 255, 0.8),
+      rgb(0, 225, 255, 0.8)
+   );
+}

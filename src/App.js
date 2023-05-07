@@ -8,6 +8,7 @@ import FeaturedSection from "./Layout/FeaturedSection";
 import SearchByFoodSection from "./Layout/SearchByFoodSection";
 import MenuSection from "./Layout/MenuSection/MenuSection";
 import PramotionSection from "./Layout/PramotionSection";
+import OrderSection from "./Layout/OrderSection";
 
 function App() {
    return (
@@ -21,6 +22,7 @@ function App() {
          <SearchByFoodSection />
          <PramotionSection />
          <MenuSection />
+         <OrderSection />
       </div>
    );
 }
