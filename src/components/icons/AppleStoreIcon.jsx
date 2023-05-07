@@ -3,8 +3,8 @@ import React from "react";
 const AppleStoreIcon = () => {
    return (
       <svg
-         width="28"
-         height="33"
+         width="30"
+         height="35"
          viewBox="0 0 28 33"
          fill="none"
          xmlns="http://www.w3.org/2000/svg"
