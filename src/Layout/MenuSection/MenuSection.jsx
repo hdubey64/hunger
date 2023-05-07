@@ -7,7 +7,9 @@ import { MenuSectionData } from "src/data";
 const MenuSection = () => {
    return (
       <div className="menu-main container">
-         <div className="menuSectionMain ">
+
+         <div className="menuSectionMain">
+
             {MenuSectionData.map((item) => (
                <div className="menu-sub">
                   <div className="menu-left">
