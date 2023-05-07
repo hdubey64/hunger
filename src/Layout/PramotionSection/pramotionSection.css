@@ -2,6 +2,7 @@
    /* width: 99vw;*/
    height: 100%;
    background-image: url(../../Assets/Images/PramotionSection/BackgroundImg.png);
+   background-image: url("src/Assets/Images/Icons/PramotionIcon/BackgroundImg.svg");
    background-repeat: no-repeat;
    background-position: center;
    background-size: cover;
