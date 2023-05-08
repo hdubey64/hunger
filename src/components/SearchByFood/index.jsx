@@ -7,7 +7,7 @@ import { FaAngleRight, FaArrowRight } from "react-icons/fa";
 import SectionHeader from "../SectionHeader";
 
 function SearchByFood({ data }) {
-  const { img, searchItems, cardHead } = data;
+  const { img, cardHead } = data;
   return (
     <div className="  searchByFoodHead">
       <div className="searchFooter">
