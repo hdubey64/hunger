@@ -1,11 +1,23 @@
 .MenuSectionMain {
   display: flex;
   flex-direction: column;
-
   gap: 4rem;
   padding: 80px 70px;
 }
 .MenuSectionMain div:nth-child(2) {
   display: flex;
   flex-direction: row-reverse;
+}
+@media screen and (max-width: 994px) {
+  .MenuSectionMain {
+    padding: 60px 0px;
+  }
+}
+@media screen and (max-width: 765px) {
+  .MenuSectionMain {
+    padding: 60px 0px;
+  }
+  .MenuSectionMain > div > div > img:nth-child(2) {
+    height: 100000px;
+  }
 }

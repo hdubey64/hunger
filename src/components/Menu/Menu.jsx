@@ -16,7 +16,7 @@ const Menu = ({ data }) => {
           <p>{para}</p>
         </div>
         <div className="menu-left-button">
-          <IconButton label="Proceed to order" color="order-btn" />
+          <IconButton label="PROCEED TO ORDER" color="order-btn" />
         </div>
       </div>
 
