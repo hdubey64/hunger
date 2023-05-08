@@ -1,5 +1,70 @@
 .footerSection {
-   height: 92ch;
+   padding: 60px 0;
    background-color: var(--footerBG);
    color: WHITE;
+}
+.cities {
+   display: grid;
+   grid-template-columns: repeat(5, 1fr);
+   place-items: center;
+}
+.cities ul {
+   list-style: none;
+}
+.footerSectionMainContentBottom {
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   grid-column-gap: 20px;
+   padding: 20px 60px;
+}
+
+.footerInfo {
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   border: 1px Solid red;
+}
+.footerInfo ul {
+   list-style: none;
+   margin-top: 10px;
+}
+.footerInfo ul h6 {
+   margin-bottom: 15px;
+   font-weight: 700;
+}
+.footerInfo ul li {
+   font-weight: 200;
+}
+.footerSocial {
+   border: 1px Solid red;
+   align-self: center;
+   justify-self: flex-end;
+   color: #b9b9b9;
+}
+.follows h6 {
+   font-weight: 700;
+   margin-bottom: 10px;
+}
+.fotterSocialIcon {
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr 7fr;
+   margin: 35px auto;
+}
+.footerSocialForm {
+   margin-top: 25px;
+}
+.inputAndBtn {
+   display: flex;
+   gap: 15px;
+   margin-top: 35px;
+}
+.inputAndBtn input {
+   padding: 5px 60px 5px 10px;
+   border-radius: 10px;
+   outline: none;
+   border: none;
+   background-color: #424242;
+   color: white;
+}
+.inputAndBtn input::placeholder {
+   color: #adadad;
 }
