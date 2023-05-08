@@ -17,7 +17,8 @@
   .MenuSectionMain {
     padding: 60px 0px;
   }
-  .MenuSectionMain > div > div > img:nth-child(2) {
-    height: 100000px;
+  .MenuSectionMain div:nth-child(2) {
+    display: flex;
+    flex-direction: column-reverse;
   }
 }

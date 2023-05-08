@@ -34,7 +34,7 @@
   background-color: #ffb20e;
   padding: 10px 31%;
   border: #ffb20e;
-  border: 2px solid black;
+  border: 2px solid white;
 }
 
 .menu-right {
@@ -72,7 +72,7 @@
     margin-top: 0px;
   }
   .order-btn {
-    padding: 10px;
+    padding: 10px 20%;
   }
   .menu-right {
     width: 460px;
@@ -85,7 +85,7 @@
   }
   .menu-left {
     width: 333px;
-    height: 250px;
+    height: 300px;
   }
   .menu-right {
     height: 250px;
