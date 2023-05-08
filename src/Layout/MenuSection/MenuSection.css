@@ -1,9 +1,9 @@
 .MenuSectionMain {
   display: flex;
   flex-direction: column;
-  border: 1px solid black;
+
   gap: 4rem;
-  margin: 70px 0px;
+  padding: 80px 70px;
 }
 .MenuSectionMain div:nth-child(2) {
   display: flex;
