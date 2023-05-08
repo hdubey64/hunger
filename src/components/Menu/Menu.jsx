@@ -1,7 +1,6 @@
 import React from "react";
 import "./Menu.css";
 import IconButton from "../Button";
-import { Divider } from "@mui/material";
 
 const Menu = ({ data }) => {
   const { header, header2, para, img } = data;
