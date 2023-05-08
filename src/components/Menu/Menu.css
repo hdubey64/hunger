@@ -34,6 +34,7 @@
   background-color: #ffb20e;
   padding: 10px 31%;
   border: #ffb20e;
+  border: 2px solid black;
 }
 
 .menu-right {
@@ -42,4 +43,51 @@
 .menu-right img {
   height: 380px;
   flex: 1;
+}
+
+@media screen and (max-width: 765px) {
+  .menu-sub {
+    flex-direction: column-reverse;
+  }
+
+  .menu-left {
+    width: 500px;
+  }
+
+  .menu-right {
+    width: 580px;
+    height: 300px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .menu-sub {
+    width: 450px;
+    margin: auto;
+  }
+  .menu-left {
+    width: 450px;
+    height: 330px;
+  }
+  .menu-left-button {
+    margin-top: 0px;
+  }
+  .order-btn {
+    padding: 10px;
+  }
+  .menu-right {
+    width: 460px;
+  }
+}
+
+@media screen and (max-width: 490px) {
+  .menu-sub {
+    width: 350px;
+  }
+  .menu-left {
+    width: 333px;
+    height: 250px;
+  }
+  .menu-right {
+    height: 250px;
+  }
 }
