@@ -9,6 +9,7 @@ import SearchByFoodSection from "./Layout/SearchByFoodSection";
 import MenuSection from "./Layout/MenuSection/MenuSection";
 import PramotionSection from "./Layout/PramotionSection";
 import OrderSection from "./Layout/OrderSection";
+import Footer from "./Layout/Footer";
 
 function App() {
    return (
@@ -23,6 +24,7 @@ function App() {
          <PramotionSection />
          <MenuSection />
          <OrderSection />
+         <Footer />
       </div>
    );
 }
