@@ -1,6 +1,7 @@
 :root {
    --yellowColor: #ffb20e;
    --orangeColor: #f17288;
+   --footerBG: #212121;
 }
 .App {
    text-align: center;
