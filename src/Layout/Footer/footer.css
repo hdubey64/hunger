@@ -1,0 +1,5 @@
+.footerSection {
+   height: 92ch;
+   background-color: var(--footerBG);
+   color: WHITE;
+}
