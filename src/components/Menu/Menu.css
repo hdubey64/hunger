@@ -32,7 +32,7 @@
 .order-btn {
   text-align: center;
   background-color: #ffb20e;
-  padding: 10px 31%;
+  padding: 10px 27%;
   border: #ffb20e;
   border: 2px solid white;
 }
@@ -53,7 +53,9 @@
   .menu-left {
     width: 500px;
   }
-
+  .order-btn {
+    padding: 10px 29%;
+  }
   .menu-right {
     width: 580px;
     height: 300px;
@@ -71,9 +73,7 @@
   .menu-left-button {
     margin-top: 0px;
   }
-  .order-btn {
-    padding: 10px 20%;
-  }
+
   .menu-right {
     width: 460px;
   }
