@@ -10,9 +10,9 @@ const MenuSection = () => {
         {MenuSectionData.map((item) => (
           <Menu data={item} key={item.menuItems} />
         ))}
+
       </div>
-    </div>
-  );
+     </div>
 };
 
 export default MenuSection;
