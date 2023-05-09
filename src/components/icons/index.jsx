@@ -5,3 +5,4 @@ export { default as TracingIcon } from "./TracingIcon";
 export { default as DeliveryIcon } from "./DeliveryIcon";
 export { default as PlayStoreIcon } from "./PlayStoreIcon";
 export { default as AppStoreIcon } from "./AppleStoreIcon";
+export { default as HeartIcon } from "./HeartIcon";
