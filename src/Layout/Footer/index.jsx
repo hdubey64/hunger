@@ -3,6 +3,7 @@ import InstaIcon from "src/components/icons/InstaIcon";
 import FacebookIcon from "src/components/icons/FacebookIcon";
 import TwitterIcon from "src/components/icons/TwitterIcon";
 import IconButton from "src/components/Button";
+import { HeartIcon } from "src/components/icons";
 
 const Footer = () => {
    return (
@@ -11,9 +12,9 @@ const Footer = () => {
             <div className="footerSectionMainContent">
                <div className="footerSectionMainContentTop">
                   <div className="footerSectionMainContentCities">
+                     <h6>Our top cities</h6>
                      <div className="cities">
                         <ul>
-                           <h6>Our top cities</h6>
                            <li>Kanpur</li>
                            <li>Lucknow </li>
                            <li>Ghaziabad</li>
@@ -51,6 +52,7 @@ const Footer = () => {
                      </div>
                   </div>
                </div>
+               <hr />
                <div className="footerSectionMainContentBottom">
                   <div className="footerInfo">
                      <div className="footerCompany">
@@ -99,12 +101,26 @@ const Footer = () => {
                      <div className="footerSocialForm">
                         <p>Receive exclusive offers in your mailbox</p>
                         <div className="inputAndBtn">
-                           <input type="text" placeholder="Enter your mail" />
+                           <div className="inputWithMailIcon">
+                              <input
+                                 type="text"
+                                 placeholder="Enter your mail"
+                              />
+                           </div>
                            <IconButton label="Subscribe" color="footerBtn" />
                         </div>
                      </div>
                   </div>
                </div>
+               <hr />
+            </div>
+            <div className="copyRight">
+               <p>
+                  All rights Reserved © <span>Your Company, 2021</span>
+               </p>
+               <p>
+                  Made with <HeartIcon /> by <span>Themewagon</span>
+               </p>
             </div>
          </div>
       </div>
