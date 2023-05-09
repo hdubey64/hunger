@@ -6,6 +6,7 @@
    background-repeat: no-repeat;
    background-position: center;
    background-size: cover;
+   /* border: 1px solid red; */
 
    /* object-fit: fill; */
 }
@@ -22,12 +23,11 @@
    display: flex;
    align-items: center;
    justify-content: center;
-
    padding: 0;
    margin: 0;
+   /* border: 1px Solid rgb(0, 223, 0); */
 }
 .pramotionCardBox {
-   border: 5px Solid green;
    display: grid;
    grid-template-columns: 2fr 1fr 2fr;
    place-items: center;
@@ -42,6 +42,7 @@
    /* width: 250px; */
    display: flex;
    align-items: center;
+   /* border: 1px Solid rgb(47, 168, 255); */
 }
 .pramotionIconSetup h3 {
    width: 200px;
@@ -55,6 +56,7 @@
    -moz-background-clip: text;
    -moz-text-fill-color: transparent;
    background-clip: text;
+   /* border: 1px Solid greenyellow; */
 }
 .divider {
    position: relative;
@@ -66,7 +68,7 @@
    height: 75px;
    border-right: 5px Solid #cfcfcf;
    top: -35px;
-   left: -50px;
+   /* left: 0px; */
    z-index: 1;
    /* margin-right: 40px; */
 }
@@ -154,7 +156,7 @@
 @media (max-width: 1399.98px) {
    .divider::after {
       top: -35px;
-      left: -80px;
+      left: -40px;
    }
    .pramotionCardContentRightHead p {
       padding: 20px 70px 20px 75px;
@@ -165,7 +167,7 @@
 @media (max-width: 1199.98px) {
    .divider::after {
       top: -35px;
-      left: -80px;
+      left: -60px;
    }
    .pramotionSectionMain {
       padding: 0;
@@ -182,10 +184,10 @@
 
 @media (max-width: 991.98px) {
    .divider::after {
-      width: 400px;
+      width: 300px;
       height: 3px;
       top: 100px;
-      left: -350px;
+      left: -300px;
       background-color: #cfcfcf;
    }
 
@@ -196,7 +198,7 @@
       place-items: center;
    }
    .pramotionIconSetup {
-      width: 400px;
+      /* width: 400px; */
       display: flex;
       align-items: center;
       justify-content: center;
@@ -220,8 +222,8 @@
 @media (max-width: 767.98px) {
    .divider::after {
       top: 100px;
-      left: -325px;
-      width: 350px;
+      left: -300px;
+      width: 300px;
    }
    .pramotionCardContentLeft img {
       width: 450px;
@@ -232,8 +234,8 @@
 @media (max-width: 575.98px) {
    .divider::after {
       top: 100px;
-      left: -325px;
-      width: 350px;
+      left: -290px;
+      width: 275px;
    }
    .pramotionCardBox {
       padding: 0;
