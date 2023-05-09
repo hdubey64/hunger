@@ -109,3 +109,9 @@
       margin: 0;
    }
 }
+
+@media (max-width: 499.98px) {
+   .footerBtn {
+      padding: 10px 105px;
+   }
+}
