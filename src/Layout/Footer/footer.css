@@ -168,7 +168,6 @@
 @media (min-width: 350.98px) and (max-width: 499.98px) {
    .footerSectionMain {
       padding: 0;
-      border: 1px Solid red;
    }
    .footerSectionMainContent hr:first-of-type {
       display: none;
