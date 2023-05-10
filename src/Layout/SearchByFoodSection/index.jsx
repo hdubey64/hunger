@@ -42,13 +42,11 @@ const SearchByFoodSection = () => {
             </div>
           </div>
         </div>
-        <div className="searchFoodMain">
-          <div className="scroll-container" ref={scrollContainerSearchRef}>
-            <div className="searchContent scroll_content">
-              {searchFoodSectionData.map((item) => (
-                <SearchByFood data={item} key={item.searchItems} />
-              ))}
-            </div>
+        <div className="scroll-container" ref={scrollContainerSearchRef}>
+          <div className="searchContent">
+            {searchFoodSectionData.map((item) => (
+              <SearchByFood data={item} key={item.searchItems} />
+            ))}
           </div>
         </div>
       </div>

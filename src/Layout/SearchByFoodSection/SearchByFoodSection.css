@@ -3,78 +3,54 @@
   padding: 20px 0px;
 }
 .searchSub {
-  margin: auto;
   display: flex;
-  margin-right: 20px;
+  align-items: center;
   justify-content: space-between;
-  grid-template-columns: 2fr 1fr;
-}
-
-.searchView p {
-  margin: auto;
-  cursor: pointer;
-  font-weight: 600;
-  color: #ffb20e;
+  grid-template-columns: 3fr 1fr;
 }
 
 .searchView {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 2fr;
   justify-content: center;
   align-items: center;
 }
+.searchView p {
+  margin: auto;
+  cursor: pointer;
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: #ffb20e;
+}
+
 .arrowView {
-  display: grid;
+  display: flex;
   gap: 0;
-  grid-template-columns: 1fr 1fr;
-  margin-right: 10px;
 }
 .sliderButton {
   margin: 10px;
 }
-/* .searchContent {
-  margin: 30px 0px;
-  display: grid;
-  gap: 0;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-} */
-.searchFoodMain {
-  position: relative;
-  margin: auto !important;
-  width: 92%;
-  margin-top: 90px;
-}
-
 .scroll-container {
-  width: 100%;
-
   overflow: scroll;
   position: relative;
   scroll-behavior: smooth;
-  /* hide scrollbar */
   -ms-overflow-style: none; /* Internet Explorer 10+ */
   scrollbar-width: none;
 }
+
 .scroll-container::-webkit-scrollbar {
   display: none; /* Chrome, Safari, Opera*/
 }
+
 .searchContent {
+  height: 320px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  /* flex-wrap: wrap; */
 }
-@media screen and (max-width: 993px) {
+
+@media screen and (max-width: 576px) {
   .searchView {
     display: none;
-  }
-  .searchContent {
-    overflow: scroll;
-    scroll-behavior: smooth;
-    -ms-overflow-style: none;
-    scrollbar-width: none;
-  }
-  .searchContent::-webkit-scrollbar {
-    display: none; /* Chrome, Safari, Opera*/
   }
 }
