@@ -4,7 +4,7 @@ import sandwch from "../Assets/Images/MenuImage/sandwch.png";
 
 export default [
   {
-    img: Pizza,
+    img: sandwch,
     header: "Best deals ",
     header2: "Crispy Sandwiches",
     para: "Enjoy the large size of sandwiches. Complete perfect slice of sandwiches",
@@ -16,7 +16,7 @@ export default [
     para: "Get the best fried chicken smeared with a lip smacking lemon chili flavor. Check out best deals for fried chicken.",
   },
   {
-    img: sandwch,
+    img: Pizza,
     header: "Wanna eat hot & spicy",
     header2: " Pizza?",
     para: "Pair up with a friend and enjoy the hot and crispy pizza pops. Try it with the best deals.",
