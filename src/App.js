@@ -11,12 +11,14 @@ import PramotionSection from "./Layout/PramotionSection";
 import OrderSection from "./Layout/OrderSection";
 import Footer from "./Layout/Footer";
 import Login from "./components/Login/Login";
+import Loding from "./components/Loading/Loading";
 
 function App() {
   return (
     <div>
       <DrawerAppBar />
       <Hero />
+      <Loding />
       <Login />
       <OfferSection />
       <WorkSection />
