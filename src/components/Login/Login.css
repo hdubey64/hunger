@@ -1,5 +1,6 @@
 .loginMain {
-  z-index: 999;
+  z-index: 1;
+  margin-top: 50px;
   box-shadow: 1px 1px 5px 1px black;
   padding: 10px 10px;
   width: 600px;
