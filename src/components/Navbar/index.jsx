@@ -11,6 +11,7 @@ import MenuIcon from "@mui/icons-material/Menu";
 import PersonIcon from "@mui/icons-material/Person";
 import { FaUserAlt } from "react-icons/fa";
 import Search from "./Assats/Search.png";
+import { Link } from "react-router-dom";
 
 const drawerWidth = 280;
 const navItems = ["Home", "About", "Contact"];
@@ -58,10 +59,13 @@ function DrawerAppBar(props) {
     <Box sx={{ display: "flex" }}>
       <AppBar component="nav" sx={{ bgcolor: "#fff", color: "black" }}>
         <div className="navbar">
-          <div className="navbar-left">
-            HUN
-            <span className="ger">GER</span>
-          </div>
+          <Link to="/">
+            <div className="navbar-left">
+              HUN
+              <span className="ger">GER</span>
+            </div>
+          </Link>
+
           <div className="navbar-mid">
             <span className="del">Deliver to: </span> <img src={Map} /> Current
             Location:
@@ -72,9 +76,12 @@ function DrawerAppBar(props) {
               <img src={Search} /> Search Food
             </span>
             <span>
-              <button className="btn">
-                <FaUserAlt /> Login
-              </button>
+              <Link to="/login">
+                {" "}
+                <button className="btn">
+                  <FaUserAlt /> Login
+                </button>
+              </Link>
             </span>
           </div>
           <div className="toggle">

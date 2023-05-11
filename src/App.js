@@ -12,23 +12,20 @@ import OrderSection from "./Layout/OrderSection";
 import Footer from "./Layout/Footer";
 import Login from "./components/Login/Login";
 import Loding from "./components/Loading/Loading";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Home from "./views/Home";
+import { Signin } from "./views/Auth";
 
 function App() {
   return (
     <div>
-      <DrawerAppBar />
-      <Hero />
-      <Loding />
-      <Login />
-      <OfferSection />
-      <WorkSection />
-      <PopularItemSection />
-      <FeaturedSection />
-      <SearchByFoodSection />
-      <PramotionSection />
-      <MenuSection />
-      <OrderSection />
-      <Footer />
+      <BrowserRouter>
+        <DrawerAppBar />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/login" element={<Signin />} />
+        </Routes>
+      </BrowserRouter>
     </div>
   );
 }
