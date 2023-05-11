@@ -10,22 +10,24 @@ import MenuSection from "./Layout/MenuSection/MenuSection";
 import PramotionSection from "./Layout/PramotionSection";
 import OrderSection from "./Layout/OrderSection";
 import Footer from "./Layout/Footer";
+import Login from "./components/Login/Login";
 
 function App() {
-   return (
-      <div>
-         <DrawerAppBar />
-         <Hero />
-         <OfferSection />
-         <WorkSection />
-         <PopularItemSection />
-         <FeaturedSection />
-         <SearchByFoodSection />
-         <PramotionSection />
-         <MenuSection />
-         <OrderSection />
-         <Footer />
-      </div>
-   );
+  return (
+    <div>
+      <DrawerAppBar />
+      <Hero />
+      <Login />
+      <OfferSection />
+      <WorkSection />
+      <PopularItemSection />
+      <FeaturedSection />
+      <SearchByFoodSection />
+      <PramotionSection />
+      <MenuSection />
+      <OrderSection />
+      <Footer />
+    </div>
+  );
 }
 export default App;
