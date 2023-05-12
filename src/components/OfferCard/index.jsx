@@ -6,7 +6,13 @@ import PropTypes from "prop-types";
 const OfferCard = ({ data }) => {
    const { offer, img, cardHead, offerRemainingTime } = data;
    return (
-      <div className="parent">
+      <div
+         className="parent"
+         data-aos="fade-up"
+         data-aos-anchor="#example-anchor"
+         data-aos-offset="500"
+         data-aos-duration="1000"
+      >
          <div ClassName="productOfferCard">
             <div className="offerTop">
                <div className="offerProduct">
