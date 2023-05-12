@@ -116,10 +116,13 @@ const Footer = () => {
             </div>
             <div className="copyRight">
                <p>
-                  All rights Reserved © <span>Your Company, 2021</span>
+                  All rights Reserved © <span>Your Company, 2023</span>
                </p>
                <p>
-                  Made with <HeartIcon /> by <span>Themewagon</span>
+                  Made with <HeartIcon /> by{" "}
+                  <span className="fs-6">
+                     <b>HUNGER</b>
+                  </span>
                </p>
             </div>
          </div>
