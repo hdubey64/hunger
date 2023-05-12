@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "./Login.css";
 import IconButton from "../Button";
 import axios from "axios";
+import swal from "sweetalert";
 
 function Login() {
   const Closebtn = () => {
@@ -14,9 +15,15 @@ function Login() {
 
   async function handleSubmit(e) {
     e.preventDefault();
+
     console.log("log:", formData);
     const result = await axios.post("http://localhost:3000/login", formData);
     console.log("result:", result.data);
+    if (formData.email === "email" && formData.password === "password") {
+      swal("Success!", "You have successfully logged in!", "success");
+    } else {
+      swal("Error!", "Invalid email or password.", "error");
+    }
   }
 
   return (
