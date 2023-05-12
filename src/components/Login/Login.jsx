@@ -12,6 +12,10 @@ function Login() {
     email: "",
     password: "",
   });
+  const [formData2, setFormData2] = useState({
+    email: "",
+    password: "",
+  });
 
   async function handleSubmit(e) {
     e.preventDefault();
@@ -19,7 +23,10 @@ function Login() {
     console.log("log:", formData);
     const result = await axios.post("http://localhost:3000/login", formData);
     console.log("result:", result.data);
-    if (formData.email === "email" && formData.password === "password") {
+
+    const result2 = await axios.get("http://localhost:3000/user", formData2);
+    console.log("log:", result2);
+    if ((formData2.email = "" || formData2.password == "")) {
       swal("Success!", "You have successfully logged in!", "success");
     } else {
       swal("Error!", "Invalid email or password.", "error");
