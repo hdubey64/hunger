@@ -43,9 +43,11 @@ function DrawerAppBar(props) {
         <div onClick={handleDrawerToggle}>
           <br />
           <br />
-          <button className="btn2">
-            <PersonIcon /> Login
-          </button>
+          <Link to="/login">
+            <button className="btn2">
+              <PersonIcon /> Login
+            </button>
+          </Link>
         </div>
       </List>
     </Box>
