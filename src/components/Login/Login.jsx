@@ -3,6 +3,7 @@ import "./Login.css";
 import IconButton from "../Button";
 import axios from "axios";
 import swal from "sweetalert";
+import Swal from "sweetalert2";
 
 function Login() {
   const Closebtn = () => {
@@ -21,15 +22,15 @@ function Login() {
     e.preventDefault();
 
     console.log("log:", formData);
-    const result = await axios.post("http://localhost:3000/login", formData);
-    console.log("result:", result.data);
-
-    const result2 = await axios.get("http://localhost:3000/user", formData2);
-    console.log("log:", result2);
-    if ((formData2.email = "" || formData2.password == "")) {
-      swal("Success!", "You have successfully logged in!", "success");
-    } else {
-      swal("Error!", "Invalid email or password.", "error");
+    try {
+      const result = await axios.post("http://localhost:3001/login", formData);
+      console.log("result:", result.data.data);
+      if (result.data.data) {
+        Swal.fire("success", "user created successfully");
+      }
+    } catch (error) {
+      Swal.fire({ icon: "error", text: "user already logged in" });
+      console.log(error.response.data);
     }
   }
 
