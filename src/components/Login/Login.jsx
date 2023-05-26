@@ -23,7 +23,10 @@ function Login() {
 
     console.log("log:", formData);
     try {
-      const result = await axios.post("http://localhost:3001/login", formData);
+      const result = await axios.post(
+        "https://hunger-backend.onrender.com/login",
+        formData
+      );
       console.log("result:", result.data.data);
       if (result.data.data) {
         Swal.fire("success", "user created successfully");
